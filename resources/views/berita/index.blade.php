@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
+            {{ __('Berita') }}
+        </h2>
+    </x-slot>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Berita</title>
-</head>
-
-<body>
-    <h1>Berita</h1>
-</body>
-
-</html>
+    <table class="table table-striped">
+        <thead>
+            <tr>Nama</tr>
+        </thead>
+    </table>
+</x-app-layout>

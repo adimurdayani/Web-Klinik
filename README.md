@@ -10,6 +10,20 @@
 ## Cara Cloning Projek
 + Melakukan cloning projek
   ```
-  
+  git clone https://github.com/adimurdayani/Web-Klinik.git [nama_folder_projek]
   ```
-+ Setelah selesai 
++ Setelah selesai lakukan perintah ini
+  ```
+  composer install
+  npm install
+  ```
++ Setelah itu membuat file `.env` kemudian cari kode ini `DB_DATABASE=` berikan nama database di code tersebut dan lakukan perintah ini di terminal
+  ```
+  php artisan key:generate
+  php artisan migrate
+  ```
++ Running projek
+  ```
+  php artisan serve
+  npm run dev
+  ```

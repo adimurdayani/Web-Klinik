@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Cara Cloning Projek
+## Cara Cloning Projek :smiley_cat:
 + Melakukan cloning projek
   ```
   git clone https://github.com/adimurdayani/Web-Klinik.git [nama_folder_projek]

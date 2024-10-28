@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,7 +23,32 @@ Route::get('/', function () {
 // Url untuk controller berita
 Route::get('/berita', [BeritaController::class, 'index'])
     ->middleware(['auth', 'verified'])
-    ->name('berita.index');
+    ->name('berita');
+
+// URL untuk controller kategori
+Route::get('/kategori', [KategoriController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('kategori');
+
+Route::get('/kategori/create', [KategoriController::class, 'create'])
+    ->middleware(['auth', 'verified'])
+    ->name('kategori.create');
+
+Route::post('/kategori/store', [KategoriController::class, 'store'])
+    ->middleware(['auth', 'verified'])
+    ->name('kategori.store');
+
+Route::get('/kategori/{kategori}/edit', [KategoriController::class, 'edit'])
+    ->middleware(['auth', 'verified'])
+    ->name('kategori.edit');
+
+Route::put('/kategori/update/{kategori}', [KategoriController::class, 'update'])
+    ->middleware(['auth', 'verified'])
+    ->name('kategori.update');
+
+Route::delete('/kategori/{kategori}', [KategoriController::class, 'destroy'])
+    ->middleware(['auth', 'verified'])
+    ->name('kategori.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -12,6 +12,7 @@
   ```
   git clone https://github.com/adimurdayani/Web-Klinik.git [nama_folder_projek]
   ```
+  Buat nama projek sesuai kebutuhan, kode ini `[nama_folder_projek]` tidak perlu diikuti.
 + Setelah selesai lakukan perintah ini
   ```
   composer install

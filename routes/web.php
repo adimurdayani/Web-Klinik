@@ -25,6 +25,10 @@ Route::get('/berita', [BeritaController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('berita');
 
+Route::get('/berita/create', [BeritaController::class, 'create'])
+    ->middleware(['auth', 'verified'])
+    ->name('berita.create');
+
 // URL untuk controller kategori
 Route::get('/kategori', [KategoriController::class, 'index'])
     ->middleware(['auth', 'verified'])
